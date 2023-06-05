@@ -3,7 +3,7 @@
 [![Twitter Follow](https://img.shields.io/twitter/follow/AIAndHumans?style=social)](https://twitter.com/AIAndHumans)
 
 
-# 🚀 Notebook Copilot: From Thoughts to Well-Crafted Notebook at Record-Speed. 
+# 🚀 Notebook Copilot: Turn Your Thoughts Into a Polished Notebook at Record-Speed with AI.
 
 Welcome to Notebook Copilot, your next-generation tool for Jupyter Notebooks. Inspired by GitHub Copilot, Notebook
 Copilot is designed to help engineers and data scientists in developing professional, high-quality notebooks. It's like
