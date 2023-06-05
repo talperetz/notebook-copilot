@@ -62,7 +62,8 @@ os.environ["OPENAI_API_KEY"] = getpass("Enter your OpenAI Key: ")
 
 ```python
 %%generate 
-# Plot the confusion matrix using for the model
+# Plot the confusion matrix for each model
+# Plot the precision-recall curve for Catboost
 ```
 
 📘 Automatically generate markdown cells to explain the code in the current cell. Your code is now not only functional but also well-documented.
