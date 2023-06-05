@@ -1,5 +1,9 @@
 setuptools~=65.5.1
 ipython~=8.13.2
 langchain~=0.0.187
+openai~=0.27.7
 pandas~=2.0.2
 pydantic~=1.10.8
+pydantic~=1.10.8
+tiktoken~=0.4.0
+faiss-cpu~=1.7.4
