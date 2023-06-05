@@ -1,0 +1,5 @@
+setuptools~=65.5.1
+ipython~=8.13.2
+langchain~=0.0.187
+pandas~=2.0.2
+pydantic~=1.10.8

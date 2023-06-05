@@ -1,0 +1,47 @@
+# Python
+*.pyc
+__pycache__/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Testing
+.pytest_cache/
+
+# Environment
+.env
+.venv
+env/
+venv/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+
+# PyCharm
+.idea/
+
+# CatBoost
+catboost_info/
+*.cbm
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST

@@ -1,0 +1,1 @@
+from .notebook_copilot import load_ipython_extension
