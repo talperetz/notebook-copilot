@@ -1,4 +1,4 @@
-[![Unit Tests](https://img.shields.io/github/actions/workflow/status/talperetz/notebook-copilot/copilot-test.yml?label=unit%20tests)](https://github.com/talperetz/notebook-copilot/actions/workflows/copilot-test.yml)
+[![Unit Tests](https://img.shields.io/github/actions/workflow/status/talperetz/notebook-copilot/copilot-test.yml?label=unittests)](https://github.com/talperetz/notebook-copilot/actions/workflows/copilot-test.yml)
 [![Package](https://img.shields.io/pypi/v/notebook_copilot?label=pypi)](https://pypi.org/project/notebook-copilot/)
 [![Twitter Follow](https://img.shields.io/twitter/follow/AIAndHumans?style=social)](https://twitter.com/AIAndHumans)
 
