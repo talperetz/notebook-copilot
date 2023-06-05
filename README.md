@@ -1,4 +1,4 @@
-# 🚀 Notebook Copilot: From Thoughts to Well-Crafted Notebook at Record-Speed.
+# 🚀 Notebook Copilot: From Thoughts to Well-Crafted Notebook at Record-Speed. 
 
 Welcome to Notebook Copilot, your next-generation tool for Jupyter Notebooks. Inspired by GitHub Copilot, Notebook
 Copilot is designed to help engineers and data scientists in developing professional, high-quality notebooks. It's like
@@ -7,8 +7,11 @@ generating code and markdown cells based on your inputs.
 
 Imagine not having to start with a blank notebook every time. Sounds dreamy, right?
 
-<h2 align="center"> Demo </h2>
-<div><iframe src="https://www.loom.com/embed/d347052d3403412083cf4ea75b2e2cd4" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+<h2 align="center"> v1 Demo </h2>
+
+
+https://github.com/talperetz/notebook-copilot/assets/11588598/02e2b030-adb3-42f2-bd6d-4a8451e3831f
+
 
 ## Features
 
