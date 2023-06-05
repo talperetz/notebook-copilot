@@ -1,4 +1,4 @@
-# 🚀 Notebook Copilot: From Thoughts to Well-Crafted Notebook at Record-Speed.
+# 🚀 Notebook Copilot: From Thoughts to Well-Crafted Notebook at Record-Speed. 
 
 Welcome to Notebook Copilot, your next-generation tool for Jupyter Notebooks. Inspired by GitHub Copilot, Notebook
 Copilot is designed to help engineers and data scientists in developing professional, high-quality notebooks. It's like
