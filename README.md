@@ -7,8 +7,10 @@ generating code and markdown cells based on your inputs.
 
 Imagine not having to start with a blank notebook every time. Sounds dreamy, right?
 
-<h2 align="center"> Demo </h2>
-<div><iframe src="https://www.loom.com/embed/d347052d3403412083cf4ea75b2e2cd4" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+<h2 align="center"> v1 Demo </h2>
+https://github.com/talperetz/notebook-copilot/assets/11588598/9952c9aa-88c7-4650-ad18-84106a413e80
+
+
 
 ## Features
 
