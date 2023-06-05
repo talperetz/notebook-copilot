@@ -8,7 +8,7 @@ generating code and markdown cells based on your inputs.
 Imagine not having to start with a blank notebook every time. Sounds dreamy, right?
 
 <h2 align="center"> v1 Demo </h2>
-https://github.com/talperetz/notebook-copilot/assets/11588598/9952c9aa-88c7-4650-ad18-84106a413e80
+https://github-production-user-asset-6210df.s3.amazonaws.com/11588598/243234877-9952c9aa-88c7-4650-ad18-84106a413e80.mp4
 
 
 
