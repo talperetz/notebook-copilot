@@ -23,7 +23,7 @@ https://github.com/talperetz/notebook-copilot/assets/11588598/02e2b030-adb3-42f2
 - 🚀 GPT Based Generation: Notebook Copilot employs advanced GPT instances for precise and efficient code generation.
 - 💻 Integrated with Any Notebook Environments: Seamless access within Jupyter Notebook and other popular platforms, boosting your productivity.
 - 🧩 Automatic Context Retrieval: Understands the full context of your notebook, ensuring consistent and relevant code generation.
-- 🔑 Bring Your Own OpenAI Key: Flexibility to use your own OpenAI key for personalized code generation and optimal results.
+- 🔑 Bring Your Own Key: Flexibility to use your own OpenAI key for personalized code generation and optimal results.
 - 🆓 Free and Open Source: Everyone can benefit from Notebook Copilot. It's our contribution to the coding community, aiming to make coding accessible, efficient, and fun.
 
 
