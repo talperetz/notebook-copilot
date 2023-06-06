@@ -1,12 +1,14 @@
-[![Unit Tests](https://img.shields.io/github/actions/workflow/status/talperetz/notebook-copilot/copilot-test.yml?label=unittests)](https://github.com/talperetz/notebook-copilot/actions/workflows/copilot-test.yml)
-[![Package](https://img.shields.io/pypi/v/notebook_copilot?label=pypi)](https://pypi.org/project/notebook-copilot/)
-[![Twitter Follow](https://img.shields.io/twitter/follow/AIAndHumans?style=social)](https://twitter.com/AIAndHumans)
+[![Unit Tests](https://img.shields.io/github/actions/workflow/status/talperetz/notebook-copilot/copilot-test.yml?label=tests)](https://github.com/talperetz/notebook-copilot/actions/workflows/copilot-test.yml)
+[![PyPI](https://img.shields.io/pypi/v/notebook_copilot?color=green)](https://pypi.org/project/notebook-copilot/)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/notebook_copilot?color=green)
+![GitHub](https://img.shields.io/github/license/talperetz/notebook-copilot)
+
 
 
 # 🚀 Notebook Copilot: Turn Your Thoughts Into a Polished Notebook at Record-Speed with AI.
 
 Welcome to Notebook Copilot, your next-generation tool for Jupyter Notebooks. Inspired by GitHub Copilot, Notebook
-Copilot is designed to help engineers and data scientists in developing professional, high-quality notebooks. It's like
+Copilot is designed to help data scientists and engineers in developing professional, high-quality notebooks. It's like
 having your personal AI-powered assistant that helps you navigate through the Jupyter universe, seamlessly
 generating code and markdown cells based on your inputs.
 
