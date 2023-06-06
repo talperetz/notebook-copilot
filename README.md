@@ -80,6 +80,8 @@ os.environ["OPENAI_API_KEY"] = getpass("Enter your OpenAI Key: ")
   blank notebooks a thing of the past.
 - [x] **Generate Magic Function**: Turn Your Comments into Code
 - [x] **Explain Magic Function**: Generate Markdown Cells that Explain Your Code
+- [ ] **Optimize Magic Function**: Generate an Aleternative Code Cell that is Optimized For Speed / Simplicity
+- [ ] **Plot Magic Function**: Generate a Cell that Visualize Your Data
 - [ ] Speed improvenents
   - [ ] Support parallel cell generation
   - [ ] Support streaming
