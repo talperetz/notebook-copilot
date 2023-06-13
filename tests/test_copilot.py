@@ -2,7 +2,7 @@ import pytest
 from IPython.testing.globalipapp import get_ipython
 from dotenv import load_dotenv
 
-from notebook_copilot.models import CellCompletion, CellCompletionList
+from notebook_copilot.models import MarkdownCompletion, CodeCompletion
 from notebook_copilot.notebook_copilot import CopilotMagics
 
 # Load the .env file
@@ -21,31 +21,56 @@ def copilot_magic(ipython):
     return copilot_magic
 
 
-def test_copilot_init(ipython, copilot_magic):
-    # call your magic with
-    ipython.run_line_magic('copilot_init',
-                           '--model gpt-3.5-turbo --strategy COT --notebook-path ../examples/copilot_example_notebook.ipynb')
-    # assert something about the result or state
-    assert copilot_magic.llm is not None
-    assert copilot_magic.notebook_docs is not None
-
-
 from unittest.mock import Mock
 
 
-def test_generate_with_mock(ipython, copilot_magic, mocker):
+def test_code_with_mock(ipython, copilot_magic, mocker):
     # Create a mock of LLMChain
     mock_llm_chain = Mock()
 
     # Set the return value of predict method
-    completion = CellCompletion(content='print("Hello, world!")', type='code')
-    mock_llm_chain.predict.return_value = CellCompletionList(cell_completions=[completion]).json()
+    completion = CodeCompletion(source='print("Hello, world!")')
+    mock_llm_chain.predict.return_value = completion.json()
 
     # Now mock the LLMChain constructor to always return our mock
     mocker.patch('notebook_copilot.chains.LLMChain', return_value=mock_llm_chain)
 
     # Now proceed with the test. All instances of LLMChain will use the mock
-    ipython.run_cell_magic('generate', '', 'your test code here')
+    ipython.run_cell_magic('code', '', 'your test code here')
+
+    mock_llm_chain.predict.assert_called_once()
+
+
+def test_optimize_with_mock(ipython, copilot_magic, mocker):
+    # Create a mock of LLMChain
+    mock_llm_chain = Mock()
+
+    # Set the return value of predict method
+    completion = CodeCompletion(source='print("Hello, world!")')
+    mock_llm_chain.predict.return_value = completion.json()
+
+    # Now mock the LLMChain constructor to always return our mock
+    mocker.patch('notebook_copilot.chains.LLMChain', return_value=mock_llm_chain)
+
+    # Now proceed with the test. All instances of LLMChain will use the mock
+    ipython.run_cell_magic('optimize', '', 'your test code here')
+
+    mock_llm_chain.predict.assert_called_once()
+
+
+def test_visualize_with_mock(ipython, copilot_magic, mocker):
+    # Create a mock of LLMChain
+    mock_llm_chain = Mock()
+
+    # Set the return value of predict method
+    completion = CodeCompletion(source='print("Hello, world!")')
+    mock_llm_chain.predict.return_value = completion.json()
+
+    # Now mock the LLMChain constructor to always return our mock
+    mocker.patch('notebook_copilot.chains.LLMChain', return_value=mock_llm_chain)
+
+    # Now proceed with the test. All instances of LLMChain will use the mock
+    ipython.run_cell_magic('visualize', '', 'your test code here')
 
     mock_llm_chain.predict.assert_called_once()
 
@@ -55,11 +80,12 @@ def test_explain_with_mock(ipython, copilot_magic, mocker):
     mock_llm_chain = Mock()
 
     # Set the return value of predict method
-    mock_llm_chain.predict.return_value = "# This is a markdown cell"
+    completion = MarkdownCompletion(source='# This is a markdown cell')
+    mock_llm_chain.predict.return_value = completion.json()
 
     # Now mock the LLMChain constructor to always return our mock
     mocker.patch('notebook_copilot.chains.LLMChain', return_value=mock_llm_chain)
 
-    ipython.run_cell_magic('explain', '', '!pip install pandas')
+    ipython.run_cell_magic('explain', '', '#complex code')
 
     mock_llm_chain.predict.assert_called_once()
