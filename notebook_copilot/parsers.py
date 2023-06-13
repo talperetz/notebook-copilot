@@ -1,0 +1,8 @@
+from langchain.output_parsers import PydanticOutputParser
+
+from notebook_copilot.models import CellCompletion, MarkdownCompletion, CodeCompletion, CellCompletionList
+
+cell_completion_parser = PydanticOutputParser(pydantic_object=CellCompletion)
+code_completion_parser = PydanticOutputParser(pydantic_object=CodeCompletion)
+markdown_completion_parser = PydanticOutputParser(pydantic_object=MarkdownCompletion)
+multiple_cells_completion_parser = PydanticOutputParser(pydantic_object=CellCompletionList)

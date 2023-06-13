@@ -28,8 +28,18 @@ https://github.com/talperetz/notebook-copilot/assets/11588598/02e2b030-adb3-42f2
 - 🔑 Bring Your Own Key: Flexibility to use your own OpenAI key for personalized code generation and optimal results.
 - 🆓 Free and Open Source: Everyone can benefit from Notebook Copilot. It's our contribution to the coding community, aiming to make coding accessible, efficient, and fun.
 
-
 ## Quickstart
+```python
+!pip install notebook_copilot
+%load_ext notebook_copilot
+```
+```python
+%copilot
+```
+
+
+
+## Walk-through
 0. Get an OpenAI [API Key](https://platform.openai.com/account/api-keys)
 1. Install Notebook Copilot directly from PyPI:
 
@@ -46,8 +56,6 @@ pip install notebook_copilot
 from getpass import getpass
 import os
 os.environ["OPENAI_API_KEY"] = getpass("Enter your OpenAI Key: ")
-
-%copilot_init -n /Users/tp/dev/workspace/notebook_copilot/copilot_example_notebook.ipynb # improves copilot performance
 ```
 
 3. Start using Notebook Copilot Magic Functions in your notebook ↓
@@ -63,7 +71,7 @@ os.environ["OPENAI_API_KEY"] = getpass("Enter your OpenAI Key: ")
 ✍️ Leverage AI to create the next cell from your comments. It's like having a conversation with your notebook.
 
 ```python
-%%generate 
+%%code 
 # Plot the confusion matrix for each model
 # Plot the precision-recall curve for Catboost
 ```
@@ -74,22 +82,32 @@ os.environ["OPENAI_API_KEY"] = getpass("Enter your OpenAI Key: ")
 # some code to explain…
 ```
 
+⚡ Improve the time complexity of the code in no time. Copilot will generate an alternative code cell that is optimized for speed.
+```python
+%%optimize
+# a code cell…
+```
+
+🎨 1 plot >= 1000 data rows. Visualize your data with a single line of code.
+```python
+%%visualize
+# a code cell…
+```
+
 ## Roadmap
 
 - [x] **Copilot Magic Function**: Continues the notebook for you, generating professional code and markdown cells, making
   blank notebooks a thing of the past.
 - [x] **Generate Magic Function**: Turn Your Comments into Code
 - [x] **Explain Magic Function**: Generate Markdown Cells that Explain Your Code
-- [ ] **Optimize Magic Function**: Generate an Aleternative Code Cell that is Optimized For Speed / Simplicity
-- [ ] **Plot Magic Function**: Generate a Cell that Visualize Your Data
-- [ ] Speed improvenents
-  - [ ] Support parallel cell generation
-  - [ ] Support streaming
-- [ ] Update underlying strategy and prompts
+- [x] **Optimize Magic Function**: Generate an Aleternative Code Cell that is Optimized For Speed / Simplicity
+- [x] **Visualize Magic Function**: Generate a Cell that Visualize Your Data
+- [x] Speed improvenents
+  - [x] Support parallel cell generation
+- [x] Update underlying strategy and prompts
 - [ ] Support more llm providers
   - [ ] Starcoder
   - [ ] Anthropic
-- [ ] AI-Powered Code completion inside cells
     
 
 ## Contributing

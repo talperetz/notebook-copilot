@@ -2,8 +2,8 @@ import pytest
 from IPython.testing.globalipapp import get_ipython
 from dotenv import load_dotenv
 
+from notebook_copilot.models import CellCompletion, CellCompletionList
 from notebook_copilot.notebook_copilot import CopilotMagics
-from notebook_copilot.prompts import CellCompletionList, CellCompletion
 
 # Load the .env file
 load_dotenv()

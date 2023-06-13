@@ -1,11 +1,30 @@
 from typing import Optional
 
 from IPython import get_ipython
-from langchain.tools import BaseTool, HumanInputRun
+from langchain.tools import BaseTool, Tool
 
 from notebook_copilot.context import get_ipython_run_history
-from notebook_copilot.output import generate_notebook_cell_below
-from notebook_copilot.prompts import CellType, CellCompletion
+from notebook_copilot.models import CellType, CellCompletion, CellCompletionList
+from notebook_copilot.output import generate_notebook_cell_below, generate_notebook_cells
+
+
+class AddNotebookCellsTool(BaseTool):
+    name = "Notebook New Cells"
+    description = (
+        "Use this tool when you want to create new cells in the notebook. "
+        "To use the tool you must provide the following parameter: 'cells' according to the CellCompletionList model."
+    )
+    
+    def _run(
+            self,
+            cells: Optional[CellCompletionList] = None,
+    ):
+        cells = cells.cells if type(cells) == CellCompletionList else cells
+        generate_notebook_cells(cells)
+        return "created new cells"
+
+    def _arun(self, query: str):
+        raise NotImplementedError("This tool does not support async")
 
 
 class NewCodeCellTool(BaseTool):
@@ -72,5 +91,8 @@ class InstalledPackagesTool(BaseTool):
         raise NotImplementedError("This tool does not support async")
 
 
-HumanInTheLoopTool = HumanInputRun(input_func=input)
-HumanInTheLoopTool.description = "Useful for when you need to ask the user a question."
+UserInputTool = Tool.from_function(
+    func=input,
+    name="User Input Tool",
+    description="Use it to get user input and direction before acting."
+)

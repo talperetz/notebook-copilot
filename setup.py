@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='notebook_copilot',
-    version='0.1.1',
+    version='0.2.0',
     packages=find_packages(),
     description='The Bridge from Thoughts to Well-Crafted Jupyter Notebook',
     install_requires=[
@@ -12,7 +12,26 @@ setup(
         'pandas~=2.0.2',
         'pydantic~=1.10.8',
         'tiktoken~=0.4.0',
+        'ipywidgets==8.0.6',
         'faiss-cpu~=1.7.4'
+    ],
+    python_requires='>=3.7.1, <4',
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "Intended Audience :: Science/Research",
+        "Intended Audience :: Developers",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        "Topic :: Scientific/Engineering :: Artificial Intelligence",
+        "Topic :: Scientific/Engineering :: Information Analysis",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Operating System :: OS Independent",
+        "Framework :: Jupyter",
+        "Natural Language :: English",
     ],
     author="Tal Peretz",
     author_email="tp@aihumanlabs.com",
