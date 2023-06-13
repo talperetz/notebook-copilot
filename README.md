@@ -17,7 +17,7 @@ Imagine not having to start with a blank notebook every time. Sounds dreamy, rig
 <h2 align="center"> v1 Demo </h2>
 
 
-https://github.com/talperetz/notebook-copilot/assets/11588598/02e2b030-adb3-42f2-bd6d-4a8451e3831f
+https://github.com/talperetz/notebook-copilot/assets/11588598/3ab87fa9-58d3-4879-8f6d-d55e96a92d6b
 
 
 ## Features
