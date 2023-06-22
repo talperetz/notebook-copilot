@@ -6,6 +6,7 @@
 
 
 # 🚀 Notebook Copilot: Turn Your Thoughts Into a Polished Notebook at Record-Speed with AI.
+![notebook-copilot2](https://github.com/talperetz/notebook-copilot/assets/11588598/db2b31f5-2858-41e9-8d5d-130532cbe76b)
 
 Welcome to Notebook Copilot, your next-generation tool for Jupyter Notebooks. Inspired by GitHub Copilot, Notebook
 Copilot is designed to help data scientists and engineers in developing professional, high-quality notebooks. It's like
