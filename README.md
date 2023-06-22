@@ -117,5 +117,9 @@ os.environ["OPENAI_API_KEY"] = getpass("Enter your OpenAI Key: ")
 ## Contributing
 We appreciate all contributions. If you're planning to contribute back bug-fixes, please do so without any further discussion. If you plan to contribute new features, utility functions, or extensions to the core, please first open an issue and discuss the feature with us.
 
-## License
-Notebook Copilot is MIT licensed, as found in the LICENSE file.
+---
+If you've found Notebook Copilot useful, please consider giving it a ⭐️ star on GitHub! This helps us know that our work is having an impact and encourages future development.
+
+[![Star on GitHub](https://img.shields.io/github/stars/talperetz/notebook-copilot.svg?style=social)](https://github.com/talperetz/notebook-copilot/stargazers)
+
+Your support is greatly appreciated! 🙌
